@@ -1,0 +1,87 @@
+agents:
+  - opencode
+  - claude-code
+  - codex
+  - cursor
+  - gemini-cli
+
+managed_path: ~/.agents/skills
+
+load_paths:
+  - ~/.agents/skills
+  - ~/.config/opencode/skills
+  - ~/.claude/skills
+  - ~/.codex/skills
+  - ~/.cursor/skills
+  - ~/.cursor/skills-cursor
+  - ~/.gemini/skills
+
+personal:
+  source: .
+  skills:
+    - "*"
+
+vendors:
+  - source: kepano/obsidian-skills
+    url: https://skills.sh/kepano/obsidian-skills
+    skills:
+      - name: defuddle
+        url: https://skills.sh/kepano/obsidian-skills/defuddle
+      - name: json-canvas
+        url: https://skills.sh/kepano/obsidian-skills/json-canvas
+      - name: obsidian-bases
+        url: https://skills.sh/kepano/obsidian-skills/obsidian-bases
+      - name: obsidian-cli
+        url: https://skills.sh/kepano/obsidian-skills/obsidian-cli
+      - name: obsidian-markdown
+        url: https://skills.sh/kepano/obsidian-skills/obsidian-markdown
+
+  - source: openai/skills
+    url: https://skills.sh/openai/skills
+    skills:
+      - name: migrate-to-codex
+        url: https://skills.sh/openai/skills/migrate-to-codex
+      - name: pdf
+        url: https://skills.sh/openai/skills/pdf
+      - name: playwright
+        url: https://skills.sh/openai/skills/playwright
+
+  - source: dimillian/skills
+    url: https://skills.sh/dimillian/skills
+    skills:
+      - name: orchestrate-batch-refactor
+        url: https://skills.sh/dimillian/skills/orchestrate-batch-refactor
+      - name: review-and-simplify-changes
+        url: https://skills.sh/dimillian/skills/review-and-simplify-changes
+      - name: review-swarm
+        url: https://skills.sh/dimillian/skills/review-swarm
+      - name: swift-concurrency-expert
+        url: https://skills.sh/dimillian/skills/swift-concurrency-expert
+      - name: swiftui-liquid-glass
+        url: https://skills.sh/dimillian/skills/swiftui-liquid-glass
+      - name: swiftui-performance-audit
+        url: https://skills.sh/dimillian/skills/swiftui-performance-audit
+      - name: swiftui-ui-patterns
+        url: https://skills.sh/dimillian/skills/swiftui-ui-patterns
+      - name: swiftui-view-refactor
+        url: https://skills.sh/dimillian/skills/swiftui-view-refactor
+
+  - source: emilkowalski/skills
+    url: https://skills.sh/emilkowalski/skills
+    skills:
+      - name: emil-design-eng
+        url: https://skills.sh/emilkowalski/skills/emil-design-eng
+
+  - source: vercel-labs/skills
+    url: https://skills.sh/vercel-labs/skills
+    skills:
+      - name: find-skills
+        url: https://skills.sh/vercel-labs/skills/find-skills
+
+  - source: cameroncooke/xcodebuildmcp
+    url: https://skills.sh/cameroncooke/xcodebuildmcp
+    skills:
+      - name: xcodebuildmcp
+        url: https://skills.sh/cameroncooke/xcodebuildmcp/xcodebuildmcp
+      - name: xcodebuildmcp-cli
+        url: https://skills.sh/cameroncooke/xcodebuildmcp/xcodebuildmcp-cli

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Clings"
+  short_description: "Use and develop the Things 3 CLI"
+  default_prompt: "Use $clings to plan and run safe Things 3 task workflows with the clings CLI."

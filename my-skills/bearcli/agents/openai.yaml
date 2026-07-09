@@ -1,0 +1,4 @@
+interface:
+  display_name: "Bear CLI"
+  short_description: "Work with Bear notes from the command line"
+  default_prompt: "Use $bearcli to find, read, create, or update Bear notes safely with bearcli."
