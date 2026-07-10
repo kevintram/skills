@@ -15,4 +15,5 @@ clear enough to skim, detailed enough to actually learn from.
 - Keep it readable: clear headings, short paragraphs, comfortable line length
   and spacing, and styled callouts for tips and warnings. Choose fresh CSS that
   suits the topic.
+- Add interactive visuals/explanations if you think they'd be helpful!
 - Save as `<topic-slug>-guide.html` and tell the user the path.
