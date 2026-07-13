@@ -3,7 +3,6 @@ agents:
   - claude-code
   - codex
   - cursor
-  - gemini-cli
 
 managed_path: ~/.agents/skills
 
@@ -14,7 +13,6 @@ load_paths:
   - ~/.codex/skills
   - ~/.cursor/skills
   - ~/.cursor/skills-cursor
-  - ~/.gemini/skills
 
 personal:
   source: .

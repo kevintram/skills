@@ -2,7 +2,7 @@
 
 The canonical source for the [agent skills](https://skills.sh) I own and edit directly, plus a manifest of the public skills I install from upstream.
 
-A *skill* is a folder with a `SKILL.md` file that teaches a coding agent how to do one thing well — from committing changes to driving a CLI. This repo keeps mine in one place so I can install the same set across every agent I use (OpenCode, Claude Code, Codex, Cursor, Gemini CLI).
+A *skill* is a folder with a `SKILL.md` file that teaches a coding agent how to do one thing well — from committing changes to driving a CLI. This repo keeps mine in one place so I can install the same set across every agent I use (OpenCode, Claude Code, Codex, Cursor).
 
 ## How this repo is organized
 
@@ -18,7 +18,7 @@ Run these from the repo root. They install globally (`-g`) into every agent I ta
 **My personal skills (my-skills):**
 
 ```bash
-npx skills add . -g -a opencode -a claude-code -a codex -a cursor -a gemini-cli --skill '*' -y
+npx skills add . -g -a opencode -a claude-code -a codex -a cursor --skill '*' -y
 ```
 
 **Public skills from upstream (vendor-skills.yaml):**
@@ -26,13 +26,13 @@ npx skills add . -g -a opencode -a claude-code -a codex -a cursor -a gemini-cli 
 Install one command per vendor, following this template (source, then one `--skill` flag per skill you want from it):
 
 ```bash
-npx skills add <source> -g -a opencode -a claude-code -a codex -a cursor -a gemini-cli --skill <skill-name> --skill <skill-name> -y
+npx skills add <source> -g -a opencode -a claude-code -a codex -a cursor --skill <skill-name> --skill <skill-name> -y
 ```
 
 For example:
 
 ```bash
-npx skills add kepano/obsidian-skills -g -a opencode -a claude-code -a codex -a cursor -a gemini-cli --skill defuddle --skill json-canvas -y
+npx skills add kepano/obsidian-skills -g -a opencode -a claude-code -a codex -a cursor --skill defuddle --skill json-canvas -y
 ```
 
 See `vendor-skills.yaml` for the full list of vendors and skills to install.
