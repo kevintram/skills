@@ -83,3 +83,19 @@ vendors:
         url: https://skills.sh/cameroncooke/xcodebuildmcp/xcodebuildmcp
       - name: xcodebuildmcp-cli
         url: https://skills.sh/cameroncooke/xcodebuildmcp/xcodebuildmcp-cli
+
+  - source: get-convex/agent-skills
+    url: https://skills.sh/get-convex/agent-skills
+    skills:
+      - name: convex
+        url: https://skills.sh/get-convex/agent-skills/convex
+      - name: convex-create-component
+        url: https://skills.sh/get-convex/agent-skills/convex-create-component
+      - name: convex-migration-helper
+        url: https://skills.sh/get-convex/agent-skills/convex-migration-helper
+      - name: convex-performance-audit
+        url: https://skills.sh/get-convex/agent-skills/convex-performance-audit
+      - name: convex-quickstart
+        url: https://skills.sh/get-convex/agent-skills/convex-quickstart
+      - name: convex-setup-auth
+        url: https://skills.sh/get-convex/agent-skills/convex-setup-auth
