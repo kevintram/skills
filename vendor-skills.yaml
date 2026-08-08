@@ -99,3 +99,9 @@ vendors:
         url: https://skills.sh/get-convex/agent-skills/convex-quickstart
       - name: convex-setup-auth
         url: https://skills.sh/get-convex/agent-skills/convex-setup-auth
+
+  - source: clerk/skills
+    url: https://skills.sh/clerk/skills
+    skills:
+      - name: clerk
+        url: https://skills.sh/clerk/skills/clerk
