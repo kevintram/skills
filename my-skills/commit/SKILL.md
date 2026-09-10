@@ -8,4 +8,5 @@ Please commit the current changes into logical commits written in mitchellh styl
 - Please note that sometimes the work *does* only make sense as a single commit.
 - Unless you *just* did this, please run automated validation and fix any errors before you commit.
 - You may spawn as many subagents as you need to explore the changes. 
+- I prefer commits with commit message bodies, not just subject lines.
 - Feel free to ask me any questions about the changes/their intention.
