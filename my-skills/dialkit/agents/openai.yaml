@@ -1,0 +1,5 @@
+interface:
+  display_name: "DialKit"
+  short_description: "Tune interfaces and animations with DialKit"
+policy:
+  allow_implicit_invocation: false
