@@ -11,6 +11,10 @@ A *skill* is a folder with a `SKILL.md` file that teaches a coding agent how to 
 
 Public skills that I use as-is are **not** copied into this repo. They're installed from their upstream repositories and tracked in `vendor-skills.yaml` with their `skills.sh` review links, so upstream stays the source of truth.
 
+## Adding a skill
+
+When asked to add a particular skill (e.g. a GitHub link like `https://github.com/DietrichGebert/ponytail`), first use the `find-skills` skill to look up its listing on [skills.sh](https://skills.sh) (e.g. `https://www.skills.sh/dietrichgebert/ponytail`), then track it in `vendor-skills.yaml` with that review link. Only accept an **exact** match: the same source repo and skill. Ignore skills with similar names or purposes from other sources.
+
 ## Install
 
 Run these from the repo root. They install globally (`-g`) into every agent I target.
