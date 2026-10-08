@@ -101,3 +101,9 @@ vendors:
     skills:
       - name: clerk
         url: https://skills.sh/clerk/skills/clerk
+
+  - source: DietrichGebert/ponytail
+    url: https://skills.sh/dietrichgebert/ponytail
+    skills:
+      - name: ponytail
+        url: https://skills.sh/dietrichgebert/ponytail/ponytail
