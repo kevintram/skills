@@ -1,16 +1,14 @@
 ---
 name: summarize-changes
-description: Summarize code changes by file and function, including why each change was made or the most likely rationale. Use when asked to summarize, explain, or report on a diff, commit, pull request, or other set of code changes.
+description: Summarize code changes by file and function, including why each change was made or the most likely rationale.
+disable-model-invocation: true
 ---
 
-Please summarize the specified changes in each file with functions, and if you made the changes, please also write a line about why you made the change. If you weren't use your best judgement about why the change was made.
+Please summarize the specified changes (just the current one if none are specified) by each file, and every function.
 
-## Inspiration
+Write three lines for each change:
+1. one saying what the change was
+2. one saying why you made the change (or your best guess if you didn't make the change)
+3. one noting any significant performance changes. (You don't have to actually do any profiling or whatever. Just theoretical is fine.)
 
-- [Dax (@thdxr), July 4, 2026](https://x.com/thdxr/status/2073238046296924466): After a large change, a per-file summary makes unusual decisions easy to spot and refine without reading the entire diff. Focus on the affected files and function signatures rather than every implementation detail.
-
-  > “files + functions signatures i need to know, care less about function body”
-
-- [Dax (@thdxr), July 4, 2026](https://x.com/thdxr/status/2073239676677452010): Give each changed file one line that explains what changed and why.
-
-  > “i ask for each file and a line about what it did to it and why”
+Please end with an overall summary and notes about changes in overall performance and complexity.
