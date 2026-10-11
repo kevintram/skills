@@ -72,6 +72,12 @@ vendors:
       - name: find-skills
         url: https://skills.sh/vercel-labs/skills/find-skills
 
+  - source: humanlayer/skills
+    url: https://skills.sh/humanlayer/skills
+    skills:
+      - name: show-me
+        url: https://skills.sh/humanlayer/skills/show-me
+
   - source: cameroncooke/xcodebuildmcp
     url: https://skills.sh/cameroncooke/xcodebuildmcp
     skills:
