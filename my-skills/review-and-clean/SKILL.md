@@ -6,6 +6,9 @@ disable-model-invocation: true
 
 Please review and clean up the specified changes (the current changes if none
 are specified): simplify what needs to be simplified, ask yourself: "Are these
-the 'right' changes (from first principles)", "Is this overengineered", 
-"Can this be simpler", "Are these the right abstractions?", etc. 
+the 'right' changes (from first principles)", "Is this overengineered?",
+"Can this be simpler?", "Are these the right abstractions?", and finally your
+tests (if you wrote any): "Do these tests actually test the right things?"
+"Are these tests even necessary?" "Do we really need all these tests?"
+
 Please make them your best!
