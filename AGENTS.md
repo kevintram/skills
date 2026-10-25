@@ -49,12 +49,13 @@ npx skills list --global
 
 ## Cloud sessions
 
-Cloud sessions (claude.ai/code) don't read `~/.claude/skills/`. To get my-skills there, set the cloud environment's setup script (environment settings → **Setup script**) to:
+Cloud sessions (claude.ai/code) don't read `~/.claude/skills/`. To get my-skills there, plus `show-me` from vendors, set the cloud environment's setup script (environment settings → **Setup script**) to:
 
 ```bash
 #!/bin/bash
-# Install kevintram/skills (my-skills) into ~/.claude/skills for cloud sessions.
-npx -y skills add kevintram/skills -g -a claude-code --skill '*' -y || echo "skills install failed" >&2
+# Install my-skills, plus show-me from vendors, into ~/.claude/skills for cloud sessions.
+npx -y skills add kevintram/skills -g -a claude-code --skill '*' -y || true
+npx -y skills add humanlayer/skills -g -a claude-code --skill show-me -y || true
 ```
 
 It installs from GitHub, so push edits to `my-skills/` first. The environment is cached for up to ~7 days without rerunning the script; edit the script (any character) to force a refresh sooner.
