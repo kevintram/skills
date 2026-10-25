@@ -4,4 +4,8 @@ description: Review and clean up the specified changes (the current changes if n
 disable-model-invocation: true
 ---
 
-Please review and clean up the specified changes (the current changes if none are specified): simplify what needs to be simplified, ask "Are these the right abstractions?", etc. Please make them your best!
+Please review and clean up the specified changes (the current changes if none
+are specified): simplify what needs to be simplified, ask yourself: "Are these
+the 'right' changes (from first principles)", "Is this overengineered", 
+"Can this be simpler", "Are these the right abstractions?", etc. 
+Please make them your best!
