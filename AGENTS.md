@@ -47,6 +47,18 @@ See `vendor-skills.yaml` for the full list of vendors and skills to install.
 npx skills list --global
 ```
 
+## Cloud sessions
+
+Cloud sessions (claude.ai/code) don't read `~/.claude/skills/`. To get my-skills there, set the cloud environment's setup script (environment settings → **Setup script**) to:
+
+```bash
+#!/bin/bash
+# Install kevintram/skills (my-skills) into ~/.claude/skills for cloud sessions.
+npx -y skills add kevintram/skills -g -a claude-code --skill '*' -y || echo "skills install failed" >&2
+```
+
+It installs from GitHub, so push edits to `my-skills/` first. The environment is cached for up to ~7 days without rerunning the script; edit the script (any character) to force a refresh sooner.
+
 ## How resolution works
 
 The `skills` CLI installs the shared set into `~/.agents/skills` and symlinks each agent's entries from there. Native agent directories (`~/.claude/skills`, `~/.codex/skills`, etc.) also symlink back to `~/.agents/skills`, so every CLI resolves the same managed set. The full list of `load_paths` lives in `vendor-skills.yaml`.
