@@ -16,7 +16,7 @@ command -v clings
 clings doctor
 ```
 
-If Things app, automation permissions, or auth-token setup are missing, report the specific blocker and the fix. For command syntax, use built-in help:
+If the Things app, automation permissions, or auth-token setup are missing, report the specific blocker and the fix. For command syntax, use built-in help:
 
 ```bash
 clings --help
