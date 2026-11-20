@@ -49,8 +49,6 @@ vendors:
   - source: dimillian/skills
     url: https://skills.sh/dimillian/skills
     skills:
-      - name: orchestrate-batch-refactor
-        url: https://skills.sh/dimillian/skills/orchestrate-batch-refactor
       - name: swift-concurrency-expert
         url: https://skills.sh/dimillian/skills/swift-concurrency-expert
       - name: swiftui-liquid-glass
