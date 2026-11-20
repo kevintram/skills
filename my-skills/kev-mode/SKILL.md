@@ -10,7 +10,7 @@ Execute the requested task end to end using this workflow. Complete each phase i
 
 ## 1. Linear & Branch Setup
 
-- Use the available Linear skill or integration (e.g., official Linear plugin/MCP/CLI) to locate the relevant Linear issue(s) and move them to **In Progress**.
+- Locate the relevant Linear issue(s) and move them to **In Progress**.
 - Make sure you are on a dedicated feature branch (not `main`/`master`). If the Linear issue specifies a branch name, prefer it.
 
 ## 2. Implement & Verify
@@ -36,12 +36,16 @@ Execute the requested task end to end using this workflow. Complete each phase i
 
 ## 6. Push & Open PR
 
-- Push the branch to the remote and open a pull request (e.g., via `gh pr create`).
+- Push the branch to the remote and open a pull request.
 - Include a concise summary, verification notes, and links/references to the relevant Linear issue(s).
 
 ## 7. Evidence Screenshots on Linear
 
-- Capture screenshots demonstrating the working change (using the appropriate tool for the project — e.g., Playwright/browser tools for web apps, simulator/MobileBuildMCP for Apple apps). Save screenshots outside the repo (or clean them up) so no untracked artifacts are left behind.
+- Capture screenshots demonstrating the working change. Save screenshots outside the repo (or clean them up) so no untracked artifacts are left behind.
     - If the change has no visual UI surface (e.g., pure backend/CLI/refactor), skip screenshots and note why.
 - Attach the screenshots (and the PR link, if not auto-linked) to the relevant Linear issue(s).
-    - If the available Linear integration cannot upload image files directly, state that clearly and provide the saved screenshot paths so the user can attach them.
+    - If your Linear integration cannot upload image files directly, state that clearly and provide the saved screenshot paths so the user can attach them.
+
+## Follow-up Issues
+
+- Throughout the workflow, if you notice any out-of-scope bugs, rough edges, or follow-up work worth tracking, file Linear issues for them rather than ignoring them or pulling them into the current PR.
