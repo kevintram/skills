@@ -3,6 +3,7 @@ agents:
   - claude-code
   - codex
   - cursor
+  - antigravity-cli
 
 managed_path: ~/.agents/skills
 
@@ -13,6 +14,7 @@ load_paths:
   - ~/.codex/skills
   - ~/.cursor/skills
   - ~/.cursor/skills-cursor
+  - ~/.gemini/config/skills
 
 personal:
   source: .

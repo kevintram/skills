@@ -2,7 +2,7 @@
 
 The canonical source for the [agent skills](https://skills.sh) I own and edit directly, plus a manifest of the public skills I install from upstream.
 
-A *skill* is a folder with a `SKILL.md` file that teaches a coding agent how to do one thing well — from committing changes to driving a CLI. This repo keeps mine in one place so I can install the same set across every agent I use (OpenCode, Claude Code, Codex, Cursor).
+A *skill* is a folder with a `SKILL.md` file that teaches a coding agent how to do one thing well — from committing changes to driving a CLI. This repo keeps mine in one place so I can install the same set across every agent I use (OpenCode, Claude Code, Codex, Cursor, Antigravity).
 
 ## How this repo is organized
 
@@ -22,7 +22,7 @@ Run these from the repo root. They install globally (`-g`) into every agent I ta
 **My personal skills (my-skills):**
 
 ```bash
-npx skills add . -g -a opencode -a claude-code -a codex -a cursor --skill '*' -y
+npx skills add . -g -a opencode -a claude-code -a codex -a cursor -a antigravity-cli --skill '*' -y
 ```
 
 **Public skills from upstream (vendor-skills.yaml):**
@@ -30,13 +30,13 @@ npx skills add . -g -a opencode -a claude-code -a codex -a cursor --skill '*' -y
 Install one command per vendor, following this template (source, then one `--skill` flag per skill you want from it):
 
 ```bash
-npx skills add <source> -g -a opencode -a claude-code -a codex -a cursor --skill <skill-name> --skill <skill-name> -y
+npx skills add <source> -g -a opencode -a claude-code -a codex -a cursor -a antigravity-cli --skill <skill-name> --skill <skill-name> -y
 ```
 
 For example:
 
 ```bash
-npx skills add kepano/obsidian-skills -g -a opencode -a claude-code -a codex -a cursor --skill defuddle --skill json-canvas -y
+npx skills add kepano/obsidian-skills -g -a opencode -a claude-code -a codex -a cursor -a antigravity-cli --skill defuddle --skill json-canvas -y
 ```
 
 See `vendor-skills.yaml` for the full list of vendors and skills to install.
@@ -62,4 +62,4 @@ It installs from GitHub, so push edits to `my-skills/` first. The environment is
 
 ## How resolution works
 
-The `skills` CLI installs the shared set into `~/.agents/skills` and symlinks each agent's entries from there. Native agent directories (`~/.claude/skills`, `~/.codex/skills`, etc.) also symlink back to `~/.agents/skills`, so every CLI resolves the same managed set. The full list of `load_paths` lives in `vendor-skills.yaml`.
+The `skills` CLI installs the shared set into `~/.agents/skills` and symlinks each agent's entries from there. Native agent directories (`~/.claude/skills`, `~/.codex/skills`, `~/.gemini/config/skills`, etc.) also symlink back to `~/.agents/skills`, so every CLI resolves the same managed set. Antigravity additionally points `~/.gemini/config/skills.json` at `~/.agents/skills` so newly added skills are picked up automatically. The full list of `load_paths` lives in `vendor-skills.yaml`.
